@@ -1,0 +1,7 @@
+(function ($) {
+	$(document).ready(function() {
+
+	$("#edit-openid-connect-client-generic-login").html("Editor Login");
+
+	});
+})(jQuery);
