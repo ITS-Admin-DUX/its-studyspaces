@@ -19,10 +19,28 @@ body {
 	line-height:166%;
 }
 
+
+.visually-hidden {
+	position:absolute !important;
+	overflow:hidden;
+	clip:rect(1px, 1px, 1px, 1px);
+	width:1px;
+	height:1px;
+	word-wrap:normal;
+}
+.visually-hidden.focusable:active, .visually-hidden.focusable:focus {
+	position:static !important;
+	overflow:visible;
+	clip:auto;
+	width:auto;
+	height:auto;
+}
+
 .container {
 	width:auto;
 	max-width:1280px;
 }
+
 
 .navbar {
 	margin:0;
@@ -233,6 +251,7 @@ a {
 	text-decoration:underline;
 	transition:color .25s ease-in-out;
 }
+
 a:link, a:visited {
 	color:#0075bc;
 }
